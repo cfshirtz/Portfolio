@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.cards {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  font-family: "poppins", "bebes nue";
+
+}
+
+/*.wrapper {
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  grid-gap:30px;
+  position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}*/
+
+.wrapper .box {
+  width:400px;
+  height:400px;
+  border-radius:15px;
+  transition: transform 500ms ease-out;
+  overflow: hidden;
+  color: #fff;
+  padding:5%;
+  text-align: center;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255,255,255,0.1);
+  justify-content:center;
+}
+
+.box h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: rgba(255,255,255,0.9);
+}
+.box p {
+  line-height: 1.9;
+  color: rgba(255,255,255,0.8);
+  font-family: "poppins";
+  font-size: 19px;
+  margin-top: 55px;
+
+}
+.box a {
+  border: none;
+  background: #fff;
+  padding: 15px 50px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  border-radius: 50px;
+  margin-top: 55px;
+  font-family: "poppins", arial;
+}
+
+.wrapper .box:before{
+  content: '';
+  background: rgba(255,255,255,0.3);
+  width:60%;
+  height:100%;
+  top:0%;
+  left:-125%;
+  transform:skew(45deg);
+  position: absolute;
+  animation-direction: left;
+  transition-duration: 500ms;
+
+}
+
+.wrapper .box:hover{
+  transform: translateY(-5%);
+}
+.wrapper .box:hover:before{
+  left:150%;
+}
+
+body {
+background-color: black;
+}
+
+h1{
+  font-family: "bebes neu", "Trebuchet MS", Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  vertical-align:center;
+  color: white;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  font-weight: 22;
+}
+
+h2{
+  font-family: "bebes neu", "Trebuchet MS", Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  vertical-align:center;
+  color: purple;
+
+}
+
+html {
+    width: 100%;
+    background-size:cover;
+}
+
+p {
+  color:white;
+}
+
+aside {
+  color: white;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  padding: auto;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-style:italic;
+  font-family:"georgia";
+
+}
+
+.footer {
+  font-size: 20px;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 2px;
+  display:middle;
+  position: center;
+  color: black;
+  opacity: 90%;
+  text-align: center;
+  vertical-align:center;
+
+
+}
