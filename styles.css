@@ -20,6 +20,8 @@
   background-size:cover;
   background-position: center center;
   font-family: "poppins", "bebes nue";
+  margin: 10px 5px 50px 10px;
+
 
 }
 
@@ -46,6 +48,8 @@
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255,255,255,0.1);
   justify-content:center;
+
+
 }
 
 .box h2 {
@@ -58,7 +62,7 @@
   color: rgba(255,255,255,0.8);
   font-family: "poppins";
   font-size: 19px;
-  margin-top: 55px;
+
 
 }
 .box a {
@@ -70,7 +74,6 @@
   text-decoration: none;
   font-size: 22px;
   border-radius: 50px;
-  margin-top: 55px;
   font-family: "poppins", arial;
 }
 
@@ -97,16 +100,19 @@
 
 body {
 background-color: black;
+border: solid black 5px;
+margin: 0 auto;
+background: linear-gradient(to right, purple, orange);
 }
 
-h1{
-  font-family: "bebes neu", "Trebuchet MS", Arial, sans-serif;
+h1 {
+  font-family: "helvetica", "Trebuchet MS", Arial, sans-serif;
   position: relative;
   text-align: center;
   vertical-align:center;
   color: white;
-  letter-spacing: 3px;
-  margin-top: 10px;
+  letter-spacing: 4px;
+  margin-top: 15px;
   font-weight: 22;
 }
 
@@ -115,31 +121,201 @@ h2{
   position: relative;
   text-align: center;
   vertical-align:center;
-  color: purple;
+  color: black;
+  margin-top: 20px;
 
 }
 
 html {
     width: 100%;
     background-size:cover;
+
 }
 
 p {
   color:white;
+  font-size: 20px;
+  margin: 5px 0px;
 }
 
 aside {
-  color: white;
+  color: black;
   justify-content: center;
   vertical-align: middle;
   text-align: center;
-  padding: auto;
-  margin-top: 25px;
-  margin-bottom: 0px;
+  margin: 25px;
+  margin-bottom: -20px;
   font-style:italic;
-  font-family:"georgia";
+  font-family:"poppins";
+  font-size: 30px;
+  border: 3px solid black;
+  /*margin-left: 350px;
+  margin-right: 350px;*/
+  padding: 18px;
+  border-radius: 10px;
+  border-style: hidden;
+  display: flex;
 
 }
+
+figure {
+  color: black;
+  text-decoration: underline;
+}
+.about {
+  text-align: center;
+  border: solid transparent 3px;
+  margin: 40px 40px;
+  display: block;
+  font-family: "bebes nue";
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+
+}
+
+table {
+  display: inline-block;
+  border: black solid 2px;
+  border-style: hidden;
+  padding: 10px 20px;
+  margin: 15px;
+
+}
+
+td {
+  display: block;
+  border: black solid 2px;
+  border-style: hidden;
+  padding: 10px 25px;
+  margin: 10px 0;
+
+
+}
+
+a {
+  color: navy;
+  font-weight: 500;
+  font-family: "bebes nue";
+  letter-spacing: 2px;
+}
+
+a:hover {
+  color: navy;
+  font-weight: 1000;
+  font-family: "bebes nue";
+  letter-spacing: 5px;
+}
+
+div .preview img {
+ margin: auto;
+ padding: auto;
+
+}
+
+div .preview img:hover {
+  margin: auto;
+  padding: auto;
+ opacity: .5;
+
+}
+
+
+/*.arrow {
+    border: solid black 4px;
+    border-width: 0 3px 3px 0;
+    display: inline-flex;
+    padding: 50px;
+    margin: 28px;
+    flex-basis: center;
+    flex-direction: column;
+    flex: center;
+}*/
+
+
+/*.down1 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: center;
+  vertical-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: 550px;
+  margin-bottom:20px;
+
+
+}
+
+.down2 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: center;
+  vertical-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: 550px;
+  margin-bottom:20px;
+
+}*/
+
+/*.down3 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: center;
+  vertical-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: 550px;
+  margin-bottom:20px;
+}*/
+
+img {
+  border-radius: 50%;
+  display: circle;
+  vertical-align: middle;
+  float: middle;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: solid black;
+  box-shadow: 6px 4px 2px;
+  color: black;
+
+}
+
+.about p {
+  color: black;
+  text-transform: none;
+  text-decoration: none;
+  text-underline:none;
+  font-size:20px;
+  display: block;
+  border: 3px solid silver;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 8px;
+  color: white;
+  border-radius: 15px;
+
+}
+
+img:hover {
+  border-radius: 50%;
+  display: circle;
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+  margin: 18px;
+  border: solid black;
+  box-shadow: 6px 4px 2px;
+  color: black;
+  opacity: 1;
+}
+
+
 
 .footer {
   font-size: 20px;
@@ -154,6 +330,55 @@ aside {
   opacity: 90%;
   text-align: center;
   vertical-align:center;
+}
+
+/* Mobile Screens */
+
+@media only screen and (max-width: 640px) {
+
+   body > header {
+      padding-bottom: 0px;
+   }
+
+   img#logo {
+      width: 100%;
+   }
+
+   a#navicon {
+      display: block;
+   }
+
+   body > header nav ul {
+      display: none;
+   }
+
+   body > header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+}
+
+/* Tablet screens. CS. */
+
+@media only screen and (min-width: 641px) {
 
 
+   body > header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+
+   body > header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
 }
