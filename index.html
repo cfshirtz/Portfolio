@@ -1,69 +1,259 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<!--This is my website portfolio project. CS.-->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cruz's Portfolio</title>
-<link href="styles.css" rel="stylesheet" style="text/css"/>
-<meta name="description" content="cruz shirtz's web Portfolio">
-<meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="cruz shirtz' web Portfolio">
+  <title>Cruz's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  </style>
+
 </head>
+<body>
 
-    <body>
-      <header>
-          <h1>Cruz Shirtz</h1>
-          <!--<aside>"No worries - it's under Cruz control now."</aside>-->
-          <div class="about">
-            <figure>About me</figure>
-            <img src="A51F2EAE-7EF0-4AC3-A34D-8CC133FD2DC7 copy.jpg">
-            <p>
-            Born and raised
-            in Northern Colorado, I know how lucky I am to be surrounded
-            by the common beauty of nature and scenery.
-            My focus in web design is to incorporate intuitive visuals, while the development
-            end ensures that my pages are accessible, functional, and economical.
-          </p>
-            <table>
-              <th>social</th>
-              <td><a href="https://www.linkedin.com/in/cruzshirtz/"</a>Linkedin</td>
-              <td><a href="https://github.com/cfshirtz"</a>Github</td>
-              <td><a href="https://www.instagram.com/cruz_shirtz/"</a>Instagram</td>
-            </table>
-          </div>
-            <!--<i class="arrow down1"></i>
-            <i class="arrow down2"></i>
-            <i class="arrow down3"></i>-->
-           </header>
-
-           <div class="cards">
-             <div class="wrapper">
-               <div class="box">
-                 <br>
-                 <h2>Web Development & Design</h2>
-                 <p>My development process is similar to my design process:
-                   easy to understand, mobile-friendly, effective visuals. </p>
-                 <a href="https://cfshirtz.github.io/Tiny-Home-Living/">Tiny Home Example</a>
-               </div>
-               <br>
-                 <div class="box">
-                 <h2>Adobe Creative Suite Projects</h2>
-                 <p>Proficient in Photoshop, Illustrator, inDesign, and Premiere</p>
-                 <div class="preview">
-                   <img src="VinylAlbumCover_ShirtzUPDATED3rd copy.png">
-                 </div>
-                 <a href="#">Learn more</a>
-           </div>
-           <br>
-           <div class="box">
-           <h2>Digital Marketing</h2>
-           <p>On-brand Branding</p>
-           <a href="#">Learn more</a>
-     </div>
-      </body>
-
-      <br><br><br>
-      <div class="footer">
-        <p>Cruz Francsico Shirtz, 2021.</p>
+<!--This Header contains my profile picture and social links. CS-->
+  <header>
+      <h1>Cruz Shirtz</h1>
+      <div class="about">
+        <figure>About me</figure>
+        <img src="cruz.jpg">
+        <p>
+        Born and raised
+        in Northern Colorado, I know how lucky I am to be surrounded
+        by the common beauty of nature.
+        My focus in web design is to incorporate intuitive visuals, while the development
+        end ensures that my pages are accessible, functional, and economical.
+      </p>
+      <!--<hr>-->
+      <div class="grid-container">
+        <table>
+          <th>social</th>
+          <td><a href="https://www.linkedin.com/in/cruzshirtz/" target="_blank">Linkedin</a></td>
+          <td><a href="https://github.com/cfshirtz" target="_blank">Github</a></td>
+          <!--<td><a href="https://www.instagram.com/cruz_shirtz/"</a>Instagram</td>-->
+          <!--<td><a href="https://codepen.io/your-work"</a>Codepen</td>-->
+          <td><a href="mailto:cruz.shirtz@gmail.com" target="_blank">E-mail</a></td>
+        </table>
       </div>
-      <br><br><br>
+      </div>
+
+       </header>
+<br>
+
+<!--Below is the web dev samples card container about the tiny home project. CS.-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">"Tiny Home Living" Website Project</div>
+        <img class="card-img-top" src="tinyhomefrontpage.png">
+  <div class="card-body"></div>
+  <a href="https://cfshirtz.github.io/Tiny-Home-Living/">Link to full website</a><br>
+  <p class="card-text">A mock-up of a "Tiny Home" broshure site that offers information and context to users wanting to learn more about the micro-home movement.</p>
+  <br>
+</div>
+</div>
+</div>
+</div>
+
+<!--Below is the image carousel that never ever works ever. CS-->
+<br>
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">Design Samples</div>
+
+  <div id="gallery" class="carousel slide" data-ride="false">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#gallery" data-slide-to="0" class="active"></li>
+      <li data-target="#gallery" data-slide-to="1"></li>
+      <li data-target="#gallery" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="VinylCover.png" alt="Vinyl">
+        <div class="carousel-caption">
+    <h3>Mock-up cover for remastered re-release of Pink Floyd's 1977 album "Animals"</h3>
+  <p>Re-produced using the pen tool and gradient mesh tool in Adobe Illustrator.</p>
+  </div>
+      </div>
+      <div class="carousel-item">
+        <img src="redrocks.png" alt="red rocks">
+        <div class="carousel-caption">
+    <h3>Design created for a "Route 66"-style card representing Red Rocks Amphitheater in Morrison, Colorado.</h3>
+    <p>Sourced from my own photography, then transfered into Proceate on tablet, and finally framed and captioned with Adobe Illustrator.</p>
+  </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Coffee.png" alt="coffee">
+        <div class="carousel-caption">
+    <h3>Sample of Coffee Shop logo</h3>
+    <p>Created entirely in Adobe Illustrator.</p>
+  </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#gallery" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#gallery" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  </div>
+</div>
+
+<!--This should be a "footer" but not an actual card footer,
+since that messes up the whole damn thing apparently. Comparison of before and after.-->
+<br>
+<div class="beforeAfter">
+<h3>See "Before and After" series!</h3>
+<p><a link href="beforeAfter.html" target="_blank">Link</a></p>
+</div>
+
+
+<!--Below is the digital marketing container card. CS.-->
+<br>
+<br>
+<br>
+<!--<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">Digital Marketing</div>
+        <img class="card-img-top" src="SynthWave.png">
+  <div class="card-body"></div>
+  <p class="card-text">Samples in on-brand Branding</p>
+<br>
+</div>
+</div>
+</div>
+</div>-->
+
+<!--<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">Procreate Drawing Program</div>
+
+  <div id="gallery2" class="carousel slide" data-ride="false">
+
+    <!-- Indicators
+    <ul class="carousel-indicators">
+      <li data-target="#gallery2" data-slide-to="0" class="active"></li>
+      <li data-target="#gallery2" data-slide-to="1"></li>
+      <li data-target="#gallery2" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="SynthWave.png" alt="SynthWave">
+        <div class="carousel-caption">
+    <h3>Synthwave art capitalizing on "80s aesthetic" trend</h3>
+    <p>Created within Procreate tablet drawing program, using "ArtWithFlo" tutorial.</p>
+  </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Horse.jpg" alt="Horse">
+        <div class="carousel-caption">
+    <h3>Horse With No Name artwork</h3>
+    <p>Created with Procreate on tablet</p>
+  </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls
+    <a class="carousel-control-prev" href="#gallery2" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#gallery2" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  </div>
+</div>-->
+
+<br>
+
+<!--Digital Marketing.-->
+
+<div class="inDesign">
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-header">Digital Marketing</div>
+
+  <div id="gallery3" class="carousel slide" data-ride="false">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#gallery3" data-slide-to="0" class="active"></li>
+      <li data-target="#gallery3" data-slide-to="1"></li>
+      <li data-target="#gallery3" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="FranceTravel.png" alt="france">
+        <div class="carousel-caption">
+    <h3>France Travel Guide</h3>
+    <p>Created with Adobe inDesign</p>
+  </div>
+      </div>
+      <div class="carousel-item">
+        <img src="FrenchPhrases.png" alt="language">
+        <div class="carousel-caption">
+  </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="ItalyTravel.png" alt="italy">
+        <div class="carousel-caption">
+    <h3>Italy Travel Guide</h3>
+    <p>Created with Adobe inDesign</p>
+  </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ItalyCurrency.png" alt="italian money">
+        <div class="carousel-caption">
+      </div>
+      </div>
+
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#gallery3" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#gallery3" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+<br>
+<footer>Cruz Francsico Shirtz, 2021.</footer>
+<br>
+  </body>
+  </html>
