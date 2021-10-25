@@ -16,7 +16,7 @@ background: linear-gradient(to right, purple, orange);
 }
 
 h1 {
-  font-family: "bebes nue", "Trebuchet MS", Arial, sans-serif;
+  font-family: "Georgia", serif;
   position: relative;
   text-align: center;
   vertical-align:center;
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2{
-  font-family: "bebes neu", "Trebuchet MS", Arial, sans-serif;
+  font-family: "Georgia", serif;
   position: relative;
   text-align: center;
   vertical-align:center;
@@ -37,7 +37,7 @@ h2{
 }
 
 h3 {
-  font-family: "bebes neu", "Trebuchet MS", Arial, sans-serif;
+  font-family: "Georgia", serif;
   position: relative;
   text-align: center;
   vertical-align:center;
@@ -52,15 +52,12 @@ h3 {
 
 }
 
-
-
-
 p {
   color:white;
   text-align: center;
   font-size: 20px;
   margin: 5px 5px;
-  font-family: "bebes nue";
+  font-family: "Georgia", serif;
 }
 
 aside {
@@ -71,7 +68,7 @@ aside {
   margin: 25px;
   margin-bottom: -20px;
   font-style:italic;
-  font-family: "bebes nue";
+  font-family: "Georgia";
   font-size: 30px;
   border: 3px solid black;
   padding: 18px;
@@ -90,7 +87,7 @@ figure {
   border: solid transparent 3px;
   /*margin: 40px 40px;*/
   display: block;
-  font-family: "bebes nue";
+  font-family: "Georgia", serif;
   letter-spacing: 2px;
   font-weight: 500;
   text-transform: uppercase;
@@ -98,6 +95,7 @@ figure {
   color: white;
   font-size: 28px;
   min-width: 40vh;
+  padding: 50px;
 }
 
 .about img {
@@ -107,28 +105,41 @@ figure {
   float: middle;
   width: 300px;
   height: 300px;
-  margin: 20px;
+  margin: 20px auto;
   border: solid black;
   box-shadow: 6px 4px 2px;
   color: black;
 }
 
+.about .card {
+  box-shadow: 6px 4px 2px;
+  color: #333;
+}
+
+
 table {
   display: inline-block;
   border: black solid 2px;
   border-style: hidden;
+  border-radius:15px;
   padding: 10px 20px;
   /*margin: 15px;*/
   min-width: 20vh;
+  background-color: #444;
 
+}
+
+th {
+  padding:20px;
 }
 
 td {
   display: block;
   border: black solid 2px;
-  border-style: hidden;
+  border-style: visible;
+  border-radius:15px;
   padding: 10px 25px;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
 
@@ -136,20 +147,21 @@ td {
 a {
   color: navy;
   font-weight: 500;
-  font-family: "bebes nue";
+  font-family: "Georgia", serif;
   letter-spacing: 2px;
 }
 
 a:hover {
   color: navy;
   font-weight: 1000;
-  font-family: "bebes nue";
+  font-family: "Georgia", serif;
   letter-spacing: 2px;
 }
 
 .card-body {
   color: white;
   text-align: center;
+  margin:auto;
 }
 
 .card-img-top {
@@ -162,29 +174,36 @@ a:hover {
   text-align: center;
   color: white;
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: bolder;
 
 }
 
 .card-text{
   color:white;
-  font-size:18px;
+  font-size:21px;
 }
 
 .card {
     background-color: #36454f!important;
-    margin: auto;
+    /*margin: 40px 100px;*/
+    margin:40px 250px;
     /*max-width: 100vh;
     max-height: 100vh;*/
+    box-shadow: 6px 4px 2px;
+    display: flex;
 }
 
 .carousel-caption{
   opacity:0;
   transition:500ms ease-in-out;
+  border-radius: 15px;
+  padding: 10px;
 }
 .carousel-item:hover .carousel-caption{
   opacity:1;
   background-color: #999;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .inDesign .carousel-item img{
@@ -193,17 +212,22 @@ height:80%;
 
 }
 
+.inDesign .card {
+
+
+}
+
 .inDesign .card .carousel-inner img {
 display: flex;
 width:40%;
 height:40%;
 margin: auto;
+box-shadow: 6px 4px 2px;
 }
-
-
 
 a {
   text-align: center;
+  font-size:24px;
 }
 
 .about p {
@@ -225,7 +249,7 @@ a {
 
 footer {
   font-size: 20px;
-  font-family: 'bebe nue', "Trebuchet MS", Arial, sans-serif;
+  font-family: "Georgia", serif;
   font-size: 14px;
   font-weight: 450;
   line-height: 20px;
