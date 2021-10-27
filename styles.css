@@ -102,6 +102,10 @@ figure {
   /*min-width: 60vh;*/
 }
 
+.about p {
+  min-width: 50%;
+}
+
 .about img {
   border-radius: 50%;
   display: flex;
@@ -124,7 +128,7 @@ table {
   border-radius:15px;
   padding: 10px 20px;
   margin-right: 15px;
-  /*min-width: 40vh;*/
+  min-width: 10vh;
   background-color: #444;
 
 }
@@ -147,6 +151,16 @@ td {
   background-repeat: no-repeat;
   background-position: center center;
   height: 350px;
+}
+
+.grid-container{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
 }
 
 
@@ -194,9 +208,11 @@ a:hover {
 .card-text{
   color:white;
   font-size:21px;
+  padding: 10px;
 }
 
 .card {
+    position: relative;
     background-color: #36454f!important;
     /*margin: 40px 100px;*/
     display: flex;
@@ -205,6 +221,12 @@ a:hover {
     box-shadow: 6px 4px 2px hsla(0, 5%, 30%, 0.5);
     /*max-width: 100vh;
     max-height: 100vh;*/
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 150vh;
+    max-height:200vh;
+
 
 }
 
@@ -235,8 +257,8 @@ height:80%;
 
 .inDesign .card .carousel-inner img {
 display: flex;
-width:40%;
-height:40%;
+max-width: 150vh;
+max-height:200vh;
 margin: auto;
 }
 
@@ -276,4 +298,55 @@ footer {
   opacity: 90%;
   text-align: center;
   vertical-align:center;
+}
+
+/* Mobile Screens */
+
+@media only screen and (max-width: 640px) {
+
+   body > header {
+      padding-bottom: 0px;
+   }
+
+   img#logo {
+      width: 100%;
+   }
+
+   a#navicon {
+      display: block;
+   }
+
+   body > header nav ul {
+      display: none;
+   }
+
+   body > header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+}
+
+/* Tablet screens. CS. */
+
+@media only screen and (min-width: 641px) {
+
+
+   body > header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+
+   body > header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
 }
